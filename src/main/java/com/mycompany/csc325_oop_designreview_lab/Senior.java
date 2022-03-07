@@ -9,6 +9,12 @@ package com.mycompany.csc325_oop_designreview_lab;
  *
  * @author soblab
  */
-public class Senior {
+public class Senior extends Human
+{
+    private int credits;
+    public Senior(String name, int age, int credits) {
+        super(name, age);
+        this.credits = credits;
+    }
     
 }

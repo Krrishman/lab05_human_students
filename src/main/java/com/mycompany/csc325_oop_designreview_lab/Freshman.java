@@ -9,6 +9,12 @@ package com.mycompany.csc325_oop_designreview_lab;
  *
  * @author soblab
  */
-public class Freshman {
+public class Freshman extends Student 
+{
+    
+
+    public Freshman(String name, int age, int gpa) {
+        super(name, age, gpa);
+    }
     
 }
