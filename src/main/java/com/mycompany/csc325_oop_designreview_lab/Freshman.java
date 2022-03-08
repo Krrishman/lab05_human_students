@@ -12,9 +12,13 @@ package com.mycompany.csc325_oop_designreview_lab;
 public class Freshman extends Student 
 {
     
-
-    public Freshman(String name, int age, int gpa) {
-        super(name, age, gpa);
+private int credits;
+    public Freshman(String name, int age, int credits) {
+        super(name, age, credits);
+        this.credits = credits;
     }
-    
+    @Override
+    public String toString(){
+        return "Name: " + this.getName() + "\nAge: " + this.getAge() + "\nCredits: " + this.credits;
+    }
 }
